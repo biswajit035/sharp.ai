@@ -1,0 +1,87 @@
+.navContainer {
+  height: 50px;
+  /* ------------------------------ mobile design ----------------------------- */
+  @include laptop {
+    height: 80px;
+  }
+  @include laptopl {
+    height: 80px;
+  }
+
+  .navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2vw;
+
+    @include laptop {
+      padding: 0 8vw;
+    }
+    @include laptopl {
+      padding: 0 8vw;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                company logo                                */
+    /* -------------------------------------------------------------------------- */
+    .logo {
+      height: 90%;
+      img {
+        height: 100%;
+      }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                  hamburger                                 */
+    /* -------------------------------------------------------------------------- */
+    .hamburger {
+      display: block;
+
+      @include laptop {
+        display: none;
+      }
+      @include laptopl {
+        display: none;
+      }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                   navlink                                  */
+    /* -------------------------------------------------------------------------- */
+    .navlink {
+      display: flex;
+      list-style-type: none;
+      gap: 25px;
+      @include mobile{
+        // display: none;
+      }
+
+      a {
+        transition-duration: 0.3s;
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+
+    .show {
+      // display: block;
+      background: #052c43;
+      color: white;
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      height: fit-content;
+      flex-direction: column;
+      padding: 12px 12px 50px 12px;
+      top: 50px;
+    }
+    .hide {
+    }
+  }
+}

@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="data" element={<Data />} />
-          <Route path="transacrton" element={<Transaction />} />
+          <Route path="transaction" element={<Transaction />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
