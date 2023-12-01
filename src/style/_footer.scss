@@ -1,0 +1,47 @@
+.footerContainer {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #052c43;
+  color: white;
+  gap: 50px;
+  padding: 25px 10px;
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    width: 100%;
+    height: fit-content;
+
+
+    
+    &_logo,&_support,&_aboutus{
+        
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: justify;
+        img{
+            height: 80px;
+            width: 80px;
+        }
+        .title{
+            padding-bottom: 30px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+      &_logo{
+        gap: 35px;
+      @include mobile{
+        display: none;
+      }
+    }
+  }
+}

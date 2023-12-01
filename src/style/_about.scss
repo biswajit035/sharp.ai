@@ -1,0 +1,93 @@
+.about {
+  height: fit-content;
+  padding: 100px 8vw;
+  display: flex;
+  word-wrap: break-word;
+  
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 100px 4vw;
+  }
+  @include tablet {
+    gap: 50px;
+    padding: 100px 2vw;
+    flex-direction: column-reverse;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                         left part of about section                         */
+  /* -------------------------------------------------------------------------- */
+  .left {
+    // background: red;
+    width: 50vw;
+    padding-right: 25px;
+    display: grid;
+    grid-template-rows: repeat(2, fit-content);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    
+    @include mobile {
+      grid-template-rows: repeat(auto, fit-content);
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    @include tablet {
+      padding-right: 0;
+      grid-gap: 25px;
+      width: 100%;
+    }
+
+    /* ------------------------------ card section ------------------------------ */
+    .card {
+      background: whitesmoke;
+      overflow: hidden;
+      height: 100%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-radius: 10px;
+      word-wrap: break-word;
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content {
+        font-size: 16px;
+      }
+      //   butoon is under button section
+    }
+    .card:nth-child(2) {
+      background: #4f86f9;
+      color: white;
+
+  /* Your styles for the third child */
+}
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                         right part of about section                         */
+  /* -------------------------------------------------------------------------- */
+  .right {
+    // background: yellow;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    @include mobile {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+
+    h1 {
+      line-height: 45px;
+      font-size: 45px;
+    }
+  }
+}
