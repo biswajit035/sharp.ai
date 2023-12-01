@@ -24,8 +24,8 @@ const GenTable = ({rows}) => {
         <TableHead>
           <TableRow>
             <TableCell>Id</TableCell>
-            <TableCell align="right">Title</TableCell>
-            <TableCell align="right">Body</TableCell>
+            <TableCell align="center">Title</TableCell>
+            <TableCell align="center">Body</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
