@@ -54,7 +54,7 @@ const PieChart = ({one, others}) => {
   data.datasets[0].data[0] = one; 
   data.datasets[0].data[1] = others; 
   return (
-    <div style={Style}>
+    <div style={Style} className="chartContainer">
       <Doughnut data={data} options={options} />
     </div>
   );

@@ -25,7 +25,8 @@ const Data = () => {
     }, []);
   return (
     <div className="data">
-      <PieChart one={rows.length} others={rawData.length}/>
+      {rawData.length &&
+      <PieChart one={rows.length} others={rawData.length} />}
       <div className="left">
         <GenTable rows={rows} />
       </div>
