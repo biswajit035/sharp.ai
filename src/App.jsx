@@ -15,8 +15,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="data" element={<Data />} />
           <Route path="transaction" element={<Transaction />} />
-          <Route path="*" element={<NoPage />} />
         </Route>
+          <Route path="*" element={<NoPage />} />
       </Routes>
     </div>
   );
