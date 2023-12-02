@@ -61,21 +61,21 @@ $img1: "./_hero1.jpg";
   }
 
   .slide1 {
-    background-image: url('../src/assets/hero11.jpg');
+    background-image: url('../assets/hero11.jpg');
     @include tablet{
-      background-image: url('../src/assets/hero12.jpg');
+      background-image: url('../assets/hero12.jpg');
     }
      @include mobile{
-      background-image: url('../src/assets/hero13.jpg');
+      background-image: url('../assets/hero13.jpg');
     }
   }
   .slide2 {
-    background-image: url('../src/assets/hero2_laptop.jpg');
+    background-image: url('../assets/hero2_laptop.jpg');
     @include mobile{
-      background-image: url('../src/assets/hero2_mobile.jpg');
+      background-image: url('../assets/hero2_mobile.jpg');
     }
     @include tablet{
-      background-image: url('../src/assets/hero2_tab.jpg');
+      background-image: url('../assets/hero2_tab.jpg');
     }
   }
 }
