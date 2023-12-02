@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import PieChart from "../PieChart";
-import GenTable from "./genTable";
+import GenTable from "./GenTable";
 import { useEffect, useState } from "react";
 
 
